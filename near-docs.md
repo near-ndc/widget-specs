@@ -1,11 +1,21 @@
-# Spec for a future "Track My Bounty" widget
+# Spec for a future "NEAR Docs" widget
 This community-driven spec is a collaborative community-led effort to create a functional specification for a widget to be developed. The goal is to bring clarity and alignment to the deliverables for developers to deliver a functional widget that meets the requirements.
 
 # Overview
-<!-- Describe the widget in one sentence.
+<!-- Describe the widget in one sentence. -->
 This widget should work similar to a wiki which will allow users to create and edit publically accessible documents, with some added features such as in-line commenting, ability to curate lists of wiki pages, ability to set different access rights for different users, and github-like pull requests to merge different drafts into the document.
 
-There is already a few prototypes available on near.social for this functionality, see [here](https://near.social/#/testwiki.near/widget/WikiOnSocialDB), [here](https://near.social/#/humanman.near/widget/wiki.near.org), and [here](https://near.social/#/root.near/widget/Wiki). This spec builds on those prototypes.
+There are already a few prototypes available on near.social for this functionality, see [here](https://near.social/#/testwiki.near/widget/WikiOnSocialDB), [here](https://near.social/#/humanman.near/widget/wiki.near.org), and [here](https://near.social/#/root.near/widget/Wiki). This spec builds on those prototypes.
+
+Alternative names for this widget:
+- Near Docs
+- Near Wiki
+- NDC Docs
+- NDC Wiki
+
+## Status
+<!-- What is the current status of this document? Inception / draft / community consultation / Locked: RFP ongoing / Locked: RFP awarded  -->
+This document is currently in "inception" status. We are looking for someone willing to take a stab at a first draft.
 
 ## Challenge
 <!-- List the challenge(s) being solved by this widget -->
