@@ -14,6 +14,7 @@ This widget will allow elected representatives (members of the various NDC "hous
 - Warn / ban / reinstate members
 
 ## Docutment Status
+<!-- What is the current status of this document? Inception / draft / community consultation / Locked: RFP ongoing / Locked: RFP awarded  -->
 This document is currently in "inception" phase. We are looking for someone to take a stab at creating a first draft spec.
 
 ## Other potential names for this widget:
