@@ -1,6 +1,6 @@
-# Community Spec
+# NDC Academy Spec
 
-The Community spec is a collaborative community-led effort to create a functional specification for a widget to be developed. The goal is to bring clarity and alignment to the deliverables for developers to deliver a functional widget that meets the requirements.
+This community-driven spec is a collaborative community-led effort to create a functional specification for a widget to be developed. The goal is to bring clarity and alignment to the deliverables for developers to deliver a functional widget that meets the requirements.
 
 # Overview
 Describe the widget in one sentence.
