@@ -6,6 +6,7 @@ This community-driven spec is a collaborative community-led effort to create a f
 This widget will allow users to apply for grants and bounties to the various Grassroots DAOs and then track the application through it's lifecycle. It will also help the various Grassroots DAOs by allowing them one central repository for management of grants and bounties, including highlighting any required cross-DAO coordination when an application have been submitted to more than one GrassRoots DAO. 
 
 ## Document Status 
+<!-- What is the current status of this document? Inception / draft / community consultation / Locked: RFP ongoing / Locked: RFP awarded  -->
 This document is currently in "inception" status. We are looking for someone willing to take a stab at creaing a first draft.
 
 ## Other potential names for this widget:
