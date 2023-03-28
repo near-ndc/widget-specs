@@ -2,7 +2,7 @@
 This community-driven spec is a collaborative community-led effort to create a functional specification for a widget to be developed. The goal is to bring clarity and alignment to the deliverables for developers to deliver a functional widget that meets the requirements.
 
 # Overview
-<!-- Describe the widget in one sentence.
+<!-- Describe the widget in one sentence. -->
 This widget will allow elected representatives (members of the various NDC "houses") to manage the tasks they need to perform, including but not limited to:
 - See when they are up for reelection
 - See which proposals they have authored or co-signed
@@ -13,7 +13,10 @@ This widget will allow elected representatives (members of the various NDC "hous
 - Investigations: CRUD actions
 - Warn / ban / reinstate members
 
-Other potential names for this widget:
+## Docutment Status
+This document is currently in "inception" phase. We are looking for someone to take a stab at creating a first draft spec.
+
+## Other potential names for this widget:
 - Track My Grant
 - NDC Grants & Bounties
 
