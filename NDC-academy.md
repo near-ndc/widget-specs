@@ -3,7 +3,9 @@
 This community-driven spec is a collaborative community-led effort to create a functional specification for a widget to be developed. The goal is to bring clarity and alignment to the deliverables for developers to deliver a functional widget that meets the requirements.
 
 # Overview
-Describe the widget in one sentence.
+This widget is intentended to help onboard people into NDC by offering them access to introductory content about the various aspects of NDC, and by rewarding them (with an SBT Badge or with Near) after learning about NDC and gettting involved.
+
+A preliminary version of the intended functionality was already built on the DoDAO platform [here] (https://near.dodao.io/ndc-near-mainnet/onboarding/guides), and this spec is intended to document an new version that is instead hosted on alpha.near.org
 
 ## Challenge
 List the challenge(s) being solved by this widget.
@@ -39,12 +41,15 @@ List the actions each collective will take individually.
 
 # Tech Spec
 ## Functions
-What functions should the widget have
+What functions and functionalities should the widget have
 
 ## Process Flows
 Describe the process flows
 
-## Dependant Widgets
+## Screens
+Describe the layout and content of the various screens within the widget
+
+## Dependent Widgets
 Does the widget interact with other widgets?
 
 # Audit
