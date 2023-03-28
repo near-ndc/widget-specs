@@ -5,7 +5,11 @@ This community-driven spec is a collaborative community-led effort to create a f
 # Overview
 This widget is intentended to help onboard people into NDC by offering them access to introductory content about the various aspects of NDC, and by rewarding them (with an SBT Badge or with Near) after learning about NDC and gettting involved.
 
-A preliminary version of the intended functionality was already built on the DoDAO platform [here] (https://near.dodao.io/ndc-near-mainnet/onboarding/guides), and this spec is intended to document an new version that is instead hosted on alpha.near.org
+A preliminary version of the intended functionality was already built on the DoDAO platform [here] (https://near.dodao.io/ndc-near-mainnet/onboarding/guides). This spec is intended to document an forked new and upgraded version that would instead be hosted on alpha.near.org
+
+## Status
+<!-- What is the current status of this document? Inception / draft / community consultation / Locked: RFP ongoing / Locked: RFP awarded  -->
+This document is currently in "inception" status. We are looking for someone willing to take a stab at a first draft.
 
 ## Challenge
 List the challenge(s) being solved by this widget.
