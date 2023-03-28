@@ -10,8 +10,9 @@ This widget will allow users to apply for a Community SBT as a part of [i-am-hum
 This document is currently in "inception" status. We are looking for someone willing to take a stab at creaing a first draft.
 
 ## Other potential names for this widget:
-- Track My Grant
-- NDC Grants & Bounties
+- i-am-human Community SBT
+- i-am-human Social SBT
+- i-am-human OG SBT v2
 
 ## Challenge
 <!-- List the challenge(s) being solved by this widget -->
