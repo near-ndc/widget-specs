@@ -2,10 +2,13 @@
 This community-driven spec is a collaborative community-led effort to create a functional specification for a widget to be developed. The goal is to bring clarity and alignment to the deliverables for developers to deliver a functional widget that meets the requirements.
 
 # Overview
-<!-- Describe the widget in one sentence.
+<!-- Describe the widget in one sentence. -->
 This widget will allow users to apply for grants and bounties to the various Grassroots DAOs and then track the application through it's lifecycle. It will also help the various Grassroots DAOs by allowing them one central repository for management of grants and bounties, including highlighting any required cross-DAO coordination when an application have been submitted to more than one GrassRoots DAO. 
 
-Other potential names for this widget:
+## Document Status 
+This document is currently in "inception" status. We are looking for someone willing to take a stab at creaing a first draft.
+
+## Other potential names for this widget:
 - Track My Grant
 - NDC Grants & Bounties
 
