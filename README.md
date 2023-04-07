@@ -10,4 +10,7 @@ Templates are provided as recommendation. If you have better suggestions on how 
 
 Which other ones should we add and start drafting specs for? Feel free to create on, fork a template, or message @KazanderDad or @blaze0x1 to propose it.
 
+New to technical specs? Here are some resources to help you effectively create and leverage these documents:
+- [A Practical Guide To Writing Technical Specs](https://stackoverflow.blog/2020/04/06/a-practical-guide-to-writing-technical-specs/)
+
 [Code of Conduct](https://docs.google.com/document/d/1sqpyXXT0p799o6Tt-T43MGmAjBF--lqi4Do8G-wDVOk/edit?usp=sharing).
