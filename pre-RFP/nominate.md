@@ -11,17 +11,21 @@ This document is currently in inception / early draft stage. We're looking for p
 
 ## Other potential names for this widget:
 <!-- Propose simple and clean names for the widget. -->
-Nominate
-Candidacy
-NDC Candidates
+- Nominate
+- Candidacy
+- NDC Candidates
+- NDC Nominations
+- Elect Me!
 
 ## Challenge
 <!-- List the challenge(s) being solved by this widget -->
-1. The voting contract is currently being built to let the community to vote on who will be their elected representatives. This voting UI assumes that there is a list of condidates to vote on. This widget is intended to help originate the list of candidates.
-2. There are not yet any defined criteria for who gets to be a candidate nor how the candidacy process will work. This widget, and the discussion we will have as a community while drafting the spec for the widget, will help clarify the conditions and will help guide future candidates through the process. This document makes no assumptions on criteria to qualify, other than that candidates should be verified human.
-3. Does a person have to announce their candidacy on-chain by nominating themselves prior to others being able to nominate them? Or can anyone nominate anyone, regardless of if they have announced their candidacy. The design in this document assumes the latter, but adds a requirement to self-nominate before becoming a full blown candidate that users can vote into office. The reason for this is that we don't want to enable wasting a vote on someone who hasn't confirmed that they would be interesting in taking the seat if elected.
-4. Feedback interface from the voting contract can be conteplated for a v2: 1) update candidate status from running to elected or defeated, 2) differentiate between incumbents and challengers.
-5. Should the Nominate widget only support NDC's official Council Roles, or should any DAO be able to leverage the functionality? This becomes a challenge with the whitelist of admins being able to curate the Council Roles, while at the same time allowing the general public to create their own Council Roles without oversight.
+The voting contract is currently being built to let the community to vote on who will be their elected representatives. This voting UI assumes that there is a list of condidates to vote on. This widget is intended to help originate the list of candidates.
+
+Other concerns and challenges we must solve underway include:
+1. There are not yet any defined criteria for who gets to be a candidate nor how the candidacy process will work. This widget, and the discussion we will have as a community while drafting the spec for the widget, will help clarify the conditions and will help guide future candidates through the process. This document makes no assumptions on criteria to qualify, other than that candidates should be verified human.
+2. Does a person have to announce their candidacy on-chain by nominating themselves prior to others being able to nominate them? Or can anyone nominate anyone, regardless of if they have announced their candidacy. The design in this document assumes the latter, but adds a requirement to self-nominate before becoming a full blown candidate that users can vote into office. The reason for this is that we don't want to enable wasting a vote on someone who hasn't confirmed that they would be interesting in taking the seat if elected.
+3. Feedback interface from the voting contract can be conteplated for a v2: 1) update candidate status from running to elected or defeated, 2) differentiate between incumbents and challengers.
+4. Should the Nominate widget only support NDC's official Council Roles, or should any DAO be able to leverage the functionality? This becomes a challenge with the whitelist of admins being able to curate the Council Roles, while at the same time allowing the general public to create their own Council Roles without oversight.
 
 ## Scope
 <!-- Define the scope and potential phases of the widget -->
