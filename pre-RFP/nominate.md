@@ -26,6 +26,7 @@ Other concerns and challenges we must solve underway include:
 2. Does a person have to announce their candidacy on-chain by nominating themselves prior to others being able to nominate them? Or can anyone nominate anyone, regardless of if they have announced their candidacy. The design in this document assumes the latter, but adds a requirement to self-nominate before becoming a full blown candidate that users can vote into office. The reason for this is that we don't want to enable wasting a vote on someone who hasn't confirmed that they would be interesting in taking the seat if elected.
 3. Feedback interface from the voting contract can be conteplated for a v2: 1) update candidate status from running to elected or defeated, 2) differentiate between incumbents and challengers.
 4. Should the Nominate widget only support NDC's official Council Roles, or should any DAO be able to leverage the functionality? This becomes a challenge with the whitelist of admins being able to curate the Council Roles, while at the same time allowing the general public to create their own Council Roles without oversight.
+5. Should we add an option to contribute monetarily to the nominee?
 
 ## Scope
 <!-- Define the scope and potential phases of the widget -->
@@ -142,17 +143,21 @@ This is the default view when first opening the app. Users can nominate themselv
 Requirements:
 - Only accounts that have been verified by i-am-human can nominate other accounts
 - Only accounts that have been verified by i-am-human and can be nominated
+- one user can nominate another to multiple open roles
+- One user can only self-nominate to one currently open role at a time. So if a user is currentky self-nominated to an open role then there is no longer an option for them to self-nominate tona second role, unless they first withdraw their current nomination. 
 
 This screen will show a nomination dialog with three key inputs
-  - Select who to nominate
-  - Select which role I'm nominating this person to
+  - Select who to nominate (single select)
+  - Select which role(s) I'm nominating this person to
     - Note: When listing the Council Roles, only currently active roles should be shown
-  - Description of why I'm nominating this person
+    - Possible to multi-select several roles
+  - Description of why I'm nominating this person. we exoect that the justification might only be a few words or sentences in most cases. however, since candidates can self-nominate, we can exect that self nominations will be lengthy. for this reason, this field should be large and should support markup annotation, to allow candidates to introduce themselves properly. 
 
-After pressing nominate then the app will check that the nominated account is indeed verified by i-am-human before saving the nomination.
+After pressing nominate button (submit) then the app will check that the nominated account is indeed verified by i-am-human before saving the nomination.
 
 The screen also shows a listing of all accounts that the logged in user has nominated to the various Council Roles
    - Option to withdraw nominations if the Council Role is still open
+   - Option to update the justification section of a current nomination. 
    - This listing includes both current and past Council Roles, where an account might have been nominated several times, either to different roles and/or to different Congress Counters
 
 ### Nominee Screen
