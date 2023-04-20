@@ -31,10 +31,11 @@ There is no natural evoution provided for communities that grow "too large" or t
 
 ## Scope
 <!-- Define the scope and potential phases of the widget -->
-All geographies
-All languages
-All verticals
-Users interested in joining, forming or managing communities of likeminded
+In scope
+- All geographies
+- All languages
+- All verticals
+- All human users interested in joining, forming or managing communities of likeminded
 
 Typical resons to come together in a community:
 - Networking
@@ -65,24 +66,24 @@ The minimum requirements the widget should meet include:
 <!-- Do the project have multiple phases? Identify a high-level summary of each phase. -->
 
 ### Phase 1: MVP
-The app owner can create global parent communities for each Constellation
-Users can find their community, assign them selves membership permissionlessly (similar to "follow")
-Members can start posting messages to the Community board.
-Members can perform a sibling split along one of the three dimensions
-Members can perform a child split along one of the three dimensions, 
-Member executing the split will become the owner of the new Community
+- The app owner can create global parent communities for each Constellation
+- Users can find their community, assign them selves membership permissionlessly (similar to "follow")
+- Members can start posting messages to the Community board.
+- Members can perform a sibling split along one of the three dimensions
+- Members can perform a child split along one of the three dimensions, 
+- Member executing the split will become the owner of the new Community
 
 ### Phase 2: Admin Functions
-Admins can assign other admins
-Users can request core memberships
-Admins can approve core memberships
-Admins can warn, silence and ban users
+- Admins can assign other admins
+- Users can request core memberships
+- Admins can approve core memberships
+- Admins can warn, silence and ban users
 
 ### Phase 3: Enable voting
-Members can request a vote on splitting the Community
-Members can launch simple EasyPolls
-Members can vote in a new core user
-Members can vote to warn / silence / ban an offending user
+- Members can request a vote on splitting the Community
+- Members can launch simple EasyPolls
+- Members can vote in a new core user
+- Members can vote to warn / silence / ban an offending user
 
 # Use Cases
 <!-- Identify and list the collectives that will use this widget and what each one will specifically do. -->
@@ -311,7 +312,8 @@ REPLACE THIS TEXT
 
 ## Dependent Widgets
 <!-- Does the widget interact with other widgets? -->
-REPLACE THIS TEXT
+- I-am-Human
+- EasyPoll
 
 # Audit
 <!-- Identify if this widget needs an audit. Does it store sensitive information, transfer tokens, or have a middleware layer? Consult the Security Workgroup if needed. -->
