@@ -5,6 +5,13 @@ This community-driven spec is a collaborative community-led effort to create a f
 <!-- Describe the widget in one sentence. -->
 This widget will help users find, join and interact with communities that are in their region, speaks their language, and/or are aligned with their interest. It provides a natural way of growing all the regional communities within NEAR, emphasising belonging and natural community growth rather than competition.
 
+Regional Communities are a crucial component of growing the NEAR ecosystem. People don't join because of the tech. People join because of other people. People organize and interact. People crave networking and a sense of belonging. All of this can be done through regional communities. This spec for a widget enables an organically evolving structure of related commmunities, and it allows for creating varied and multifaceted communities such as:
+- Near Stockholm Degens
+- Near Africa DeFi and Refi
+- Near Spanish Global Devs
+- Near Spanish Florida Gaming & Events
+- Near Miami Spanish
+
 ## Document Status 
 <!-- What is the current status of this document? Inception / draft / community consultation / Locked: RFP ongoing / Locked: RFP awarded  -->
 This document is a very early draft. Looking for community input to make it a better and more fully documented draft.
