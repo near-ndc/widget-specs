@@ -3,7 +3,7 @@ This community-driven spec is a collaborative community-led effort to create a f
 
 # Overview
 <!-- Describe the widget in one sentence. -->
-This widget will help users find, join and interact with communities that are in their region and aligned with their interest. It also provides a natural way of growing all the regional communities within NEAR.
+This widget will help users find, join and interact with communities that are in their region, speaks their language, and/or are aligned with their interest. It provides a natural way of growing all the regional communities within NEAR, emphasising belonging and natural community growth rather than competition.
 
 ## Document Status 
 <!-- What is the current status of this document? Inception / draft / community consultation / Locked: RFP ongoing / Locked: RFP awarded  -->
@@ -11,11 +11,12 @@ This document is a very early draft. Looking for community input to make it a be
 
 ## Other potential names for this widget:
 <!-- Propose simple and clean names for the widget. -->
-My Communities
-My Community
-Regional Community
-Regional Communities
-Community Finder
+List of possible names: 
+- My Communities
+- My Community
+- Regional Community
+- Regional Communities
+- Community Finder
 
 ## Challenge
 <!-- List the challenge(s) being solved by this widget -->
@@ -48,25 +49,54 @@ What is NOT within the scope of regional communities? Groups that are not buldin
 
 ## Requirements
 <!-- What are the Minimal Viable Requirements (MV)  the widget should meet to be considered complete? -->
+The minimum requirements the widget should meet include:
 - Built on BOS / Alpha / Near.social
-- Can have a single admin owner or a DAO as an owner
+- Can have a single admin owner, several owners / admins, or a DAO as an owner
 - Members can post messages within community
-- Messages posted in communities that I follow will show up in my stream
+- Messages posted within communities that I follow will show up in my stream
 - Supports all three dimensions
    - Geography as a hierarchy (each community has one geography, and has a parent with a higher level geography)
    - Language as a flat list, single-select
-   - Constealltion as tags, multi-select
+   - Consteallation as tags, multi-select
+- Allows the owner to split the community on one of the dimensions
+- Allows the owner to reassign ownership fully, and allows the owner(s) to give ownership rights to others
 
 ## Phases
 <!-- Do the project have multiple phases? Identify a high-level summary of each phase. -->
-REPLACE THIS TEXT
+
+### Phase 1: MVP
+The app owner can create global parent communities for each Constellation
+Users can find their community, assign them selves membership permissionlessly (similar to "follow")
+Members can start posting messages to the Community board.
+Members can perform a sibling split along one of the three dimensions
+Members can perform a child split along one of the three dimensions, 
+Member executing the split will become the owner of the new Community
+
+### Phase 2: Admin Functions
+Admins can assign other admins
+Users can request core memberships
+Admins can approve core memberships
+Admins can warn, silence and ban users
+
+### Phase 3: Enable voting
+Members can request a vote on splitting the Community
+Members can launch simple EasyPolls
+Members can vote in a new core user
+Members can vote to warn / silence / ban an offending user
 
 # Use Cases
 <!-- Identify and list the collectives that will use this widget and what each one will specifically do. -->
 
 ## Actors
 <!-- List all collections that will use the widget. -->
-REPLACE THIS TEXT
+- Members
+   - Admin members
+   - Core members
+   - Home members
+   - Hangaround members
+- Non-members
+   - Non-member humans
+   - Non-member users
 
 ## Actions
 <!-- List the actions each collective will take individually. -->
@@ -95,7 +125,7 @@ A drawback of this approach is that there is no vote. Any single admin can follo
 - membership is open to anyone, with the restriction that they can be a full member of one and only one community
 
 This author recommends a combination, whereby there are four types of membership:
-1. Home Membership - each user can define their one and only "home" membership = the community that is most closely aligned with them. This can be done without approval from the community
+1. Home Membership - each user can define their one and only "home" membership = the community that is most closely aligned with them. This can be done without approval from the community, but each user can only select exactly one home community (or not make the selection).
 2. Hangaroud Membership - any user can be a hangaround. This feature is similar to a standard "follow" and should be the default membership for most communities.
 3. Core Member - the user has been approved in some way (by community vote or admin vote) to be a core member of the community. This option should not be a default option, but could be a possibility to enable for some communities that desire this option.
 4. Admin Member - the user has admin rights for the group
@@ -105,13 +135,27 @@ It is this authors recommendation that commuinties be open for anyone to join an
 ### Split a Community
 Instead of creating a Community from scratch, splitting an existing Community into two should be the default way of creating new communities. This is a core feature of the Community widget design.
 
-When splitting a community, the following choices should be taken:
-- Along which dimension do you want the split to occur: Geography, Language, or Constellation?
-  - If splitting along Geography then ask if it's a sibling-split of child-split. Example of the former: Sweden splits into Sweden + Norway. Example of the latter: Sweden splits into Sweden + Stockholm
-  - If splitting along Language then simply ask which other language the new community should serve
-  - If splitting along Constellations and there is already a constellation picked, then simply ask what constellation the new Community should serve and it will be a sibling. If splitting along Constellations and there was no prior constellation picked, then ask which Constellations the new Community wishes to serve and it will be a child.
-  - The user requesting the split will also be the first leader of the new community by default
+When splitting a community, the key question to ask the user is this: "Along which dimension do you want the split to occur: Geography, Language, or Constellation?"
+- If splitting along the Geography dimension then ask also if it's a sibling-split of child-split. 
+   - Example of sibling-split: [Near Sweden] splits into [Near Sweden] + [Near Norway], which becomes the sibling Community with the same parent
+   - Example of child-split: [Near Sweden] splits into [Near Sweden] + [Near Stockholm], which becomes the child Community of the preceeding community
+- If splitting along the Language dimension then 
+   - Simply ask which other language the new community should serve, which becomes a sibling Community. Example: [Near Switzerland English] splits into [Near Switzerland English] and [Near Switzerland German], both of which has the same parent [Near Eurppe English]
+- If splitting along the Constellations dimension then
+   - if there is already a constellation picked, then simply ask what constellation the new Community should serve and it becomes a sibling Community. Example: [Near Somalia DeFi] splits into [Near Somalia DeFi] + [Near Somalie Gaming]
+   - if there was no prior constellation picked, then ask which Constellations the new Community should serve and becomes a child Community. Example: [Near Uganda] splits into [Near Uganda] + [Near Uganda NFT]
+- The split has to be along at one and only one of the dimensions. The split cannot proceed unless there is an actual change proposed, one that will make the new Community different by design from the original Community from which it splits.
 
+Any member can request a split, it must not be approved by the admins. 
+- The members voting should be asked a few questions
+   - Do you approve of this split proposal?
+   - If so, would you want to become a member of the new Community? Would you voluenteer to also become and admin?
+   - If so, would you also want to stay a member of the current community?
+- It is this author's opinion that a minimum of three to five other members should approve the split and also wish to become a member of the new Community for it to take effect
+- Once sufficiently approved, then the split should immediately be executed. It should not require admin involvement or approval, because we want the split to be a natural, organic and permissionless occurence.
+
+The user requesting the split trigger an automatic vote to approve the split. If the request is approved then the original requestor will also be the first leader of the new community by default. 
+ 
 After splitting the community, then each member should be given a choice as to which of the resulting communities they wish to belong to, or if they wish to be a member of both.
 
 ### Merge two Communities
@@ -120,6 +164,15 @@ We don't anticipate this to happen often, but it could be the case that two comm
 A merge proposal should be approved by majority vote in both communities before it is allowed to happen.
 
 It's not easy to design rules for how the merge should be executed, based on the complexity of possible permutations of the pre-merge Communities. It seems plausible that merge power should not be given to regular users but could be given as an admin power to a dev / superuser. The alternative would be that merging not be supported, in which case the community will manually have to move from and abandon one community in favor of the other.
+
+### Interact with my Community
+Members should at minimum be able to post messages within the community which become publicly readable to anyone regardless of membership status, and where other members are allowed to comment on the message.
+
+Messages posted on boards that I follow should show up in my personal feed in chronological order. But they don't show up in the feed of users who are not members and don't follow the community.
+
+Members or admins (depending on Community settings) should be able to post polls for the community, which only community members are allowed to vote in.
+
+As a member I should be able to see all other members listed in a sidebar, along with their membership / admin status.
 
 ### Ban a user from a Community
 Banning is a strong power and should be used very restrictively. We suggest milder and more human forms of restricting users that are not following the code of conduct for a community. 
@@ -137,9 +190,19 @@ These measures can be designed such that each increasing level of banning must b
 ### Manage a Community
 Communities should be open and welcoming, not closed for elite members only. We should design them such that members have as much powers as possible, and that admins are given as few god-like options as possible.
 
+Some management functions include (non-exhaustive list):
+- Add / change / delete Constellation tags of the Community (note: having no Constellations is the same as having all Constellation tags)
+- Change the name of the Community
+- Changing the code of conduct
+- Changing the rules for gating and/or auto-approving membership
+- Changing the annual membership fee
+- Changing the Geographical parent 
+
 One way to achieve decentralized leadership is to give admin powers to the community by majority vote, where any member can propose a vote and any member can vote on them, and where the proposal is automatically executed following a majority vote. 
 - Consider making it a requirement that communities are owned and managed by an Astro-DAO with a minimum of 5 council members, rather than an individual owner.
 - Consider forking the relevant parts of the Sputnik DAO codebase into this widget, to manage the Community by vote.
+
+The question on who leads a community is often a contentious issue. Strong leaders can be super helpful but can also inhibit other aspiring leaders. Weak leaders can fail to get the community going. Corrupt leaders can squander away the money the community might have a stake in. It's not easy to design a generic tool that will allow the community to best choose their leader(s) across a variety of cultures and complex scenarios.
 
 ### Create a new Community
 The widget design should inherently discourage users from creating new communities. Instead, users should be encouraged to...
@@ -164,13 +227,17 @@ If the developers decide anyways to give an option to create a new community fro
 <!-- Describe which action is done by which actors. Feel free to use a table format or provide your own graphics. A "swimlane process chart" often works well here. -->
 REPLACE THIS TEXT
 
-|         | Action 1 | Action 2 | Action 3 | action 4 |
+|         | Admin | Member | Non-member Human | Non-member User |
 | ------- | -------- | -------- | -------- | -------- |
-| Actor 1 |          |          |          |          |
-| Actor 2 |          |          |          |          |
-| Actor 3 |          |          |          |          |
-| Actor 4 |          |          |          |          |
-
+| Find and Follow Community |          |          | Yes         | Yes         |
+| Join a Community |          |          | Yes         |          |
+| Approve a new Community member | Yes         |          |          |          |
+| Split a Community | Yes         |          |          |          |
+| Merge two Communities | Yes         |          |          |          |
+| Interact with my Community | Yes         | Yes         |          |          |
+| Ban a user from a Community | Yes         |          |          |          |
+| Manage a Community | Yes         |          |          |          |
+| Create a new Community |          |          | Yes         |          |
 
 
 # Tech Spec
@@ -180,7 +247,63 @@ REPLACE THIS TEXT
 
 ## Process Flows
 <!-- Describe the process flows -->
-REPLACE THIS TEXT
+
+## Data Architecture
+<!-- Describe the data architecture and principles -->
+
+### Geographies
+To prevent unmanageable complexity in the geography dimension, we propose that there should always be a "trunk" that sets the direction into narrower and narrower geographies, from which the language-branches and constellation-branches can expand. The trunk concept is the family of communities that don't have a constellation selected and that has English as their language. Only communities with these characteristics are allowed to create new "child" geographies. Conversely, any Commmunity that either has a non-english language or has narrowed down their Constellation will not be allowed to create new geographies. Instead they will be confined to only select pre-defined geographies from the trunk. 
+
+We should create an initial set of "trunk" Communities
+- Global
+   - North America
+      - Canada
+      - USA
+   - Asia
+      - Indonesia
+      - Japan
+      - South Korea
+      - Russia
+      - Vietnam
+   - South America
+   - Africa
+   - Europe
+      - DACH
+      - France
+      - Portugal
+      - Spain
+      - Ukraine
+   - Oceania
+
+### Languages
+
+English should be the default langugage for all new Communities.
+- It should be possible for the Community admins to change the language
+- When a member proposes as split they have the option to split due to wishing to cover a different language
+
+The initial list of optional languages should include the following major crypto-dominant languages:
+- Chinese
+- French
+- German
+- Indonesian
+- Japanese
+- Portugese
+- Russion
+- Spanish
+- Vietnamese
+
+### Constellations (verticals)
+
+The initial list of Constellations tags should include the following:
+- Gaming
+- NFTs
+- ReFi
+- DeFi
+- Devs
+- Governance
+- Degens
+- Social
+- Events
 
 ## Screens
 <!-- Describe the layout and content of the various screens within the widget -->
